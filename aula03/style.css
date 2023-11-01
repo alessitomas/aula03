@@ -1,0 +1,45 @@
+/* Estilo geral para o corpo do documento */
+body {
+    font-family: Arial, sans-serif;  /* Define a fonte para o corpo do documento */
+    margin: 0;  /* Remove as margens padrão */
+    padding: 0;  /* Remove o preenchimento padrão */
+}
+
+/* 20 px */
+/* Estilo para o título h1 (Título) */
+h1 {
+    text-align: center;  /* Centraliza o texto */
+    margin-top: 2%;  /* Margem superior de 20px */
+    margin-bottom: 2%;  /* Margem inferior de 20px */
+}
+/* 20 px */
+
+/* GRID para a conteúdo do catalogo */
+.catalogo {
+    display: grid;  /* Ativa o layout de grade */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Configura 3 colunas de mesmo tamanho */
+    grid-gap: 2rem;  /* Espaçamento de 20px entre os itens da grade */
+    padding: 1.5rem;  /* Preenchimento de 20px ao redor da grade */
+}
+
+/* 1px 10px 200px */
+/* Estilo para cada div individual dentro do catálogo */
+.catalogo > div {
+    border: 1px solid #ccc;  /* Bordas com 1px e cor cinza claro */
+    padding: 0.2rem;  /* Preenchimento de 10px */
+    position: relative;  /* Posição relativa para posicionamento de elementos filhos */
+    height: 20rem;  /* Altura fixa de 200px para cada div */
+    overflow: hidden;  /* Esconde qualquer conteúdo que saia do div */
+}
+
+/* Estilo para as imagens dentro do catálogo */
+.catalogo img {
+    width: 100%;  /* Largura de 100% para preencher o div */
+    height: 100%;  /* Altura de 100% para preencher o div */
+    object-fit: cover;  /* Ajusta a imagem para cobrir todo o espaço do div mantendo a proporção */
+}
+
+.img1{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
